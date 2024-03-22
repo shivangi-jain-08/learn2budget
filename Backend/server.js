@@ -5,10 +5,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 require('dotenv').config();
 
+app.use(express.json());
 
 app.get('/ping', (req, res) => {
     res.send("pong");
 });
+
+
 
 connectToDB()
     .then(() => {
