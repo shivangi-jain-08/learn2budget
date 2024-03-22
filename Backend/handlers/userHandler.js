@@ -1,4 +1,4 @@
-const User = require("../models/userModel");
+
 
 // Importing necessary modules
 const User = require("../models/userModel");
